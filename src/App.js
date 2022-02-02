@@ -2,7 +2,8 @@ import './App.css';
 import ReactGA from 'react-ga';
 import Carousel from './component/Carousel';
 import { useEffect } from 'react';
-import { withRouter } from 'react-router-dom';
+// import { } from 'react-router-dom'
+// import { withRouter } from 'react-router-dom';
 ReactGA.initialize('G-6YRWL6SYFE');
 function App() {
 	useEffect(() => {
@@ -15,4 +16,4 @@ function App() {
 	);
 }
 
-export default withRouter(App);
+export default App;
