@@ -1,0 +1,88 @@
+.bar {
+	float: left;
+	width: 6px;
+	height: 6px;
+	border-radius: 2px;
+	background-color: #4b9cdb;
+}
+
+.l-10 {
+	animation-delay: 1.56s;
+}
+
+.load-10 .bar {
+	animation: loadingJ 2s cubic-bezier(0.17, 0.37, 0.43, 0.67) infinite;
+}
+
+@keyframes loadingJ {
+	0%,
+	100% {
+		transform: translate(0, 0);
+	}
+
+	50% {
+		transform: translate(300px, 0);
+		background-color: #f5634a;
+		width: 10px;
+	}
+}
+
+canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: black;
+}
+
+.page-title {
+	padding-top: 100px;
+}
+
+.list-style-four li,
+.list-style-four li:before {
+	color: #00adb5;
+}
+
+@media only screen and (max-width: 1023px) {
+	.page-title {
+		padding-top: 1em;
+	}
+}
+
+.login-section {
+	padding: 0;
+}
+
+x-sign:nth-of-type(1) {
+	color: #47aeb5;
+	--color1: #47aeb5;
+	--color2: #47aeb5;
+	--color3: #47aeb5;
+	--color4: #47aeb5;
+	font-family: Gruppo;
+}
+.btn-style-four {
+	/* background-color: #f20487; */
+	background-color: #f20487;
+	text-decoration: none;
+	/* font-weight: 400;
+	text-transform: uppercase;
+	min-width: 160px;
+	text-align: center;
+	border-radius: 10px;
+	padding: 10px 30px;
+	margin-top: 50px; */
+}
+
+.button:hover {
+	text-decoration: none;
+	background-color: #12114a;
+}
+#btncs{
+	text-decoration: none;
+	background-color: #f20487;
+}
+#btncs:hover{
+	text-decoration: none;
+	background-color: #12114a;
+}

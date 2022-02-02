@@ -1,0 +1,67 @@
+/* #abcd {
+	visibility: visible;
+	animation-delay: 300ms;
+	animation-name: fadeInUp;
+        visibility: visible;
+    animation-delay: 300ms;
+    animation-name: fadeInUp;
+} */
+
+#row {
+	/* display: -ms-flexbox; */
+	display: flex;
+	/* -ms-flex-wrap: wrap; */
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+.fadeOut {
+	opacity: 0;
+	width: 0;
+	height: 0;
+	transition: width 0.5s 0.5s, height 0.5s 0.5s, opacity 0.5s;
+}
+.fadeIn {
+	opacity: 1;
+	width: 100px;
+	height: 100px;
+	transition: width 0.5s, height 0.5s, opacity 0.5s 0.5s;
+}
+h5 {
+	padding-bottom: 0;
+}
+p {
+	padding-top: 0;
+}
+
+.single-speaker-area .speaker-info h5 {
+	font-size: 20px;
+	font-weight: 500;
+	color: #ffffff;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+}
+.single-speaker-area .speaker-info p {
+	color: cyan;
+	margin-bottom: 0;
+	letter-spacing: 1px;
+	line-height: 1;
+}
+
+.speaker-info {
+	bottom: 0;
+	margin-bottom: -10px;
+	background-color: rgba(0, 0, 0, 0.1);
+	width: 90%;
+	margin-left: auto;
+	/* padding-left: 5px; */
+	/* text-align: center; */
+	/* display: flex; */
+	/* flex-direction: row; */
+	/* justify-content: flex-start; */
+}
+.single-speaker-area {
+	background-color: rgba(0, 0, 0, 0.05);
+	/* text-align: center; */
+}

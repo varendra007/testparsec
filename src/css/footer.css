@@ -1,0 +1,76 @@
+	/*=-footer-=*/
+    footer {
+        color: #fff;
+        background-attachment: fixed;
+        background-color:#12114a;
+background-image: url(https://s7.postimg.org/uyf0oioaz/footer-bg.png);
+        background-size: cover;
+        background-position: bottom;
+    }
+    footer p {
+        color: #fff;
+    }
+footer a {
+        color: #fff;
+    }
+    .social-pet li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    .social-pet li a {
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        text-align: center;
+        display: block;
+        line-height: 35px;
+        background-color: #3a5a95;
+        color: #fff;
+    }
+    .social-pet li:nth-child(2) a {
+        background-color: #57aced;
+    }
+    .social-pet li:nth-child(3) a {
+        background-color: #813f58;
+    }
+    .social-pet li:nth-child(4) a {
+        background-color: #ff004c;
+    }
+    .social-pet li a:hover i {
+        transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        animation: 300ms;
+        scale: 2;
+    }
+    .recent-post li {
+        display: block;
+        color: #ccc;
+        margin-bottom: 25px;
+    }
+    .recent-post li label {
+        float: left;
+        border: 2px solid #ccc;
+        padding: 1px 7px;
+        text-align: center;
+    }
+    .recent-post li label span {
+        color: #fff;
+    }
+    footer .input-group-addon {
+        background-color: #0141a2;
+        padding: 10px;
+    }
+    .f-address li i {
+        color: #2995de;
+        font-size: 18px;
+    }
+    .f-address li a {
+        color: #fff;
+    }
+    /*=-Copyright-=*/
+    .copyright {
+        background-color: #230e48;
+        padding: 12px 0;
+font-size:14px;
+    }

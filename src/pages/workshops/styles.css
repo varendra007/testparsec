@@ -1,0 +1,64 @@
+x-sign {
+	--interval: 1s;
+	display: block;
+	text-shadow: 10 10 10px var(--color1), 20 20 20px var(--color2),
+		40 40 40px var(--color3), 80 80 80px var(--color4);
+	will-change: filter, color;
+	filter: saturate(60%);
+	animation: flicker steps(100) var(--interval) 1s infinite;
+}
+x-sign:nth-of-type(1) {
+	color: #ed6286;
+	--color1: goldenrod;
+	--color2: orangered;
+	--color3: mediumblue;
+	--color4: purple;
+	font-family: Gruppo;
+}
+@keyframes flicker {
+	50% {
+		color: pink;
+		filter: saturate(200%) hue-rotate(20deg);
+	}
+}
+.btn {
+	background-color: #394989;
+	border: none;
+	color: white;
+	padding: 12px 30px;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+	background-color: RoyalBlue;
+}
+.news-block-style {
+	box-shadow: -2px -3px 15px 2px #b1b8d2;
+	font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		'Helvetica Neue', Arial, sans-serif;
+	border-radius: 50px;
+	height: 550px;
+}
+#page-title {
+	/* background: url(../../images/background/workshop.jpg); */
+	/* padding-top: 150px; */
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	overflow: hidden;
+	padding: 380px 0 30px 0;
+}
+
+@media all and (max-width: 425px) {
+	.responsiveFont {
+		font-size: 18px;
+	}
+}
+@media all and (max-width: 365px) {
+	.responsiveFont {
+		font-size: 16px;
+	}
+}
