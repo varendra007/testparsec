@@ -1,24 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter as Router } from 'react-router-dom';
-import LazyLoad from 'react-lazyload';
-import Routes from './routes';
-
-
+import ReactGA from 'react-ga';
+import Carousel from './component/Carousel';
+import { useEffect } from 'react';
+import { withRouter } from 'react-router-dom';
+ReactGA.initialize('G-6YRWL6SYFE');
 function App() {
-
+	useEffect(() => {
+		ReactGA.pageview(window.location.pathname + window.location.search);
+	}, []);
 	return (
-		<div>
-			<LazyLoad>
-        {/* <Background /> */}
-        {/* <EventPage /> */}
-				<Router>
-					<Routes />
-				</Router>
-				{/* <Footer /> */}
-			</LazyLoad>
+		<div className="App">
+			<Carousel />
 		</div>
 	);
 }
 
-export default App;
+export default withRouter(App);
